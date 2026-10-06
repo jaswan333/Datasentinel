@@ -1,0 +1,4 @@
+Train Attacks,Unseen Test Attack,Threshold,Precision,Recall,F1,ROC-AUC,PR-AUC,FPR
+label_flip+feature_perturbation+duplicate_injection,clean_label,0.15,0.0511,0.9708,0.0971,0.3433,0.0344,0.9489
+label_flip+feature_perturbation+duplicate_injection,targeted_label,0.3,0.016,0.7167,0.0313,0.656,0.0134,0.4447
+label_flip+feature_perturbation+duplicate_injection,tabular_backdoor,0.1,0.03,0.9986,0.0582,0.407,0.0228,0.9996

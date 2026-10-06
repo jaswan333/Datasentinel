@@ -1,0 +1,23 @@
+{
+    "poison_rate_simulated": 0.05,
+    "total_samples": 24000,
+    "sample_risk_breakdown": {
+        "high_risk_quarantine": 3776,
+        "medium_risk_review": 2308,
+        "low_risk_cleared": 17916
+    },
+    "high_risk_percentage": 15.73,
+    "mean_sample_risk": 0.2941,
+    "dataset_risk_index": 0.2257,
+    "dataset_trust_score": 77.43,
+    "dataset_risk_level": "MODERATE_RISK",
+    "overall_status": "SUSPICIOUS",
+    "recommended_action": "QUARANTINE_FLAGGED_SAMPLES_AND_REVIEW",
+    "quarantine_audit_accuracy": {
+        "ground_truth_poisoned": 1200,
+        "quarantined_true_positives": 884,
+        "quarantined_false_positives": 2892,
+        "quarantine_recall": 0.7367,
+        "quarantine_precision": 0.2341
+    }
+}

@@ -1,0 +1,3 @@
+Detector,Flagged_Count,True_Positives,False_Positives,False_Negatives,Precision,Recall,F1,ROC-AUC
+Isolation Forest (Feature Space),1200,48,1152,1152,0.04,0.04,0.04,0.5051012061403508
+Cleanlab (Confident Learning),3634,822,2812,378,0.22619702806824435,0.685,0.34009102192800994,0.8787566885964913

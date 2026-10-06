@@ -1,0 +1,6 @@
+Detector,Flagged,True Positives,False Positives,Precision,Recall,F1,ROC-AUC,PR-AUC,FPR
+Cleanlab (Confident Learning),1206,411,795,0.3408,0.3425,0.3416,0.8795,0.2981,0.0349
+Isolation Forest (Feature Space),1200,53,1147,0.0442,0.0442,0.0442,0.5056,0.0504,0.0503
+Local Outlier Factor (LOF),1200,53,1147,0.0442,0.0442,0.0442,0.4986,0.0494,0.0503
+DataSentinel Evidence Fusion (th=0.75),3364,841,2523,0.25,0.7008,0.3685,0.8796,0.2992,0.1107
+DataSentinel Evidence Fusion (Default th=0.50),5259,987,4272,0.1877,0.8225,0.3056,0.8796,,

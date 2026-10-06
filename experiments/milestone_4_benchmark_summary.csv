@@ -1,0 +1,7 @@
+Attack,Poison Rate,Best Detector,Precision,Recall,F1,ROC-AUC,PR-AUC,Recovery After Screening
+Label Flip,5.0%,DataSentinel Fusion,0.3534,0.5125,0.4184,0.8807,0.3454,Purged 896 (74.7% Rec) | F1: 0.442 -> 0.447
+Targeted Label,1.0%,DataSentinel Fusion,0.0756,0.6458,0.1354,0.9319,0.1004,Purged 206 (85.8% Rec) | Boundary Restored
+Feature Perturbation,5.0%,DataSentinel Fusion,0.2134,0.4125,0.2812,0.8125,0.1897,Purged 513 (42.8% Rec) | F1: 0.444 -> 0.445
+Duplicate Injection,5.0%,DataSentinel Fusion,0.6695,0.9875,0.7980,0.9921,0.8315,Purged 1188 dups (99.0% Rec) | Skew Purged
+Clean Label,5.0%,DataSentinel Fusion,0.7166,0.5583,0.6276,0.9426,0.6641,Purged 966 (80.5% Rec) | F1: 0.454 -> 0.463
+Tabular Backdoor,3.0%,DataSentinel Fusion,0.5762,0.8403,0.6836,0.9859,0.5801,ASR 100.0% -> 10.0% (92.2% Rec, Neutralized)

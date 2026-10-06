@@ -1,0 +1,97 @@
+# ==============================================================================
+# DataSentinel - Git Ignore Configuration
+# ==============================================================================
+
+# --- Environment & Sensitive Credentials ---
+.env
+*.env
+!.env.example
+.env.local
+.env.*.local
+
+# --- Python Bytecode & Build Artifacts ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDEs, Editors & OS Files ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# --- Jupyter Notebook Checkpoints ---
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- Testing & Code Quality ---
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Logs & Runtime State ---
+*.log
+runtime/
+runtime/*
+
+# --- Serialized Models & Large Binaries (>100MB / non-code weights) ---
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.bin
+*.h5
+models/*.pkl
+models/*.joblib
+!models/.gitkeep
+
+# --- Large Raw Datasets & Spreadsheets ---
+*.xls
+*.xlsx
+data/raw/
+default of credit card clients.xls
+clean_credit_data.csv
+
+# --- Generated Attack Datasets (Reproducible via scripts/run_m4_benchmark.py) ---
+data/poisoned/
+
+# --- Generated Bulk Experiment Dumps & Evidence Tables ---
+experiments/detections/*evidence_table.csv
+experiments/attacks/
+experiments/screening/
+experiments/sample_risk_scores_5pct.csv
+experiments/sample_risk_evidence_table_5pct.csv
+experiments/quarantine_5pct.csv
+experiments/poison_ground_truth_*.csv

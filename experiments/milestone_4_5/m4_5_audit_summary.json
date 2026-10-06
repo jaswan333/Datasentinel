@@ -1,0 +1,189 @@
+{
+    "bank_marketing_supervised": {
+        "mode": "SUPERVISED TABULAR",
+        "audit_mode": "supervised",
+        "total_samples": 2500,
+        "valid_samples": 2500,
+        "insufficient_samples": 0,
+        "mean_evidence_coverage_pct": 100.0,
+        "dataset_risk_score": 10.17,
+        "risk_category": "LOW",
+        "status": "LOW_RISK",
+        "sample_breakdown": {
+            "high_risk_pct": 0.0,
+            "medium_risk_pct": 12.68,
+            "low_risk_pct": 87.32,
+            "high_risk_count": 0,
+            "medium_risk_count": 317,
+            "low_risk_count": 2183,
+            "insufficient_count": 0
+        },
+        "signal_breakdown": {
+            "label_risk_pct": 11.6,
+            "anomaly_risk_pct": 3.2,
+            "duplicate_risk_pct": 0.0,
+            "uncertainty_risk_pct": 21.92,
+            "consistency_risk_pct": 12.12
+        },
+        "dataset_trust_score": 89.83,
+        "label_analysis": "APPLIED",
+        "dataset_shape": {
+            "rows": 2500,
+            "columns": 17
+        },
+        "feature_counts": {
+            "numeric": 7,
+            "categorical": 9,
+            "encoded_dimensions": 47
+        }
+    },
+    "german_credit_supervised": {
+        "mode": "SUPERVISED TABULAR",
+        "audit_mode": "supervised",
+        "total_samples": 1000,
+        "valid_samples": 1000,
+        "insufficient_samples": 0,
+        "mean_evidence_coverage_pct": 100.0,
+        "dataset_risk_score": 15.81,
+        "risk_category": "LOW",
+        "status": "LOW_RISK",
+        "sample_breakdown": {
+            "high_risk_pct": 0.0,
+            "medium_risk_pct": 28.5,
+            "low_risk_pct": 71.5,
+            "high_risk_count": 0,
+            "medium_risk_count": 285,
+            "low_risk_count": 715,
+            "insufficient_count": 0
+        },
+        "signal_breakdown": {
+            "label_risk_pct": 24.3,
+            "anomaly_risk_pct": 7.4,
+            "duplicate_risk_pct": 0.2,
+            "uncertainty_risk_pct": 65.0,
+            "consistency_risk_pct": 26.2
+        },
+        "dataset_trust_score": 84.19,
+        "label_analysis": "APPLIED",
+        "dataset_shape": {
+            "rows": 1000,
+            "columns": 21
+        },
+        "feature_counts": {
+            "numeric": 7,
+            "categorical": 13,
+            "encoded_dimensions": 61
+        }
+    },
+    "bank_marketing_unsupervised": {
+        "mode": "UNSUPERVISED TABULAR",
+        "audit_mode": "unsupervised",
+        "total_samples": 2500,
+        "valid_samples": 2500,
+        "insufficient_samples": 0,
+        "mean_evidence_coverage_pct": 100.0,
+        "dataset_risk_score": 12.53,
+        "risk_category": "LOW",
+        "status": "LOW_RISK",
+        "sample_breakdown": {
+            "high_risk_pct": 0.0,
+            "medium_risk_pct": 2.04,
+            "low_risk_pct": 97.96,
+            "high_risk_count": 0,
+            "medium_risk_count": 51,
+            "low_risk_count": 2449,
+            "insufficient_count": 0
+        },
+        "signal_breakdown": {
+            "anomaly_risk_pct": 3.2,
+            "duplicate_risk_pct": 0.0,
+            "rarity_risk_pct": 28.96
+        },
+        "dataset_trust_score": null,
+        "label_analysis": "NOT APPLICABLE",
+        "dataset_shape": {
+            "rows": 2500,
+            "columns": 16
+        },
+        "feature_counts": {
+            "numeric": 7,
+            "categorical": 9,
+            "encoded_dimensions": 47
+        }
+    },
+    "taiwan_credit_supervised": {
+        "mode": "SUPERVISED TABULAR",
+        "audit_mode": "supervised",
+        "total_samples": 2500,
+        "valid_samples": 2500,
+        "insufficient_samples": 0,
+        "mean_evidence_coverage_pct": 100.0,
+        "dataset_risk_score": 13.35,
+        "risk_category": "LOW",
+        "status": "LOW_RISK",
+        "sample_breakdown": {
+            "high_risk_pct": 0.0,
+            "medium_risk_pct": 19.44,
+            "low_risk_pct": 80.56,
+            "high_risk_count": 0,
+            "medium_risk_count": 486,
+            "low_risk_count": 2014,
+            "insufficient_count": 0
+        },
+        "signal_breakdown": {
+            "label_risk_pct": 20.16,
+            "anomaly_risk_pct": 0.68,
+            "duplicate_risk_pct": 0.0,
+            "uncertainty_risk_pct": 43.68,
+            "consistency_risk_pct": 20.2
+        },
+        "dataset_trust_score": 86.65,
+        "label_analysis": "APPLIED",
+        "dataset_shape": {
+            "rows": 2500,
+            "columns": 25
+        },
+        "feature_counts": {
+            "numeric": 21,
+            "categorical": 3,
+            "encoded_dimensions": 34
+        }
+    },
+    "german_credit_missing_duplicate": {
+        "mode": "SUPERVISED TABULAR",
+        "audit_mode": "supervised",
+        "total_samples": 1000,
+        "valid_samples": 1000,
+        "insufficient_samples": 0,
+        "mean_evidence_coverage_pct": 85.0,
+        "dataset_risk_score": 18.72,
+        "risk_category": "LOW",
+        "status": "LOW_RISK",
+        "sample_breakdown": {
+            "high_risk_pct": 0.4,
+            "medium_risk_pct": 42.6,
+            "low_risk_pct": 57.0,
+            "high_risk_count": 4,
+            "medium_risk_count": 426,
+            "low_risk_count": 570,
+            "insufficient_count": 0
+        },
+        "signal_breakdown": {
+            "label_risk_pct": 24.3,
+            "anomaly_risk_pct": 7.4,
+            "uncertainty_risk_pct": 65.0,
+            "consistency_risk_pct": 26.2
+        },
+        "dataset_trust_score": 81.28,
+        "label_analysis": "APPLIED",
+        "dataset_shape": {
+            "rows": 1000,
+            "columns": 21
+        },
+        "feature_counts": {
+            "numeric": 7,
+            "categorical": 13,
+            "encoded_dimensions": 61
+        }
+    }
+}
