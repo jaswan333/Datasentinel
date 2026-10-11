@@ -1,0 +1,42 @@
+[
+  {
+    "configuration": "baseline",
+    "poison_rate": 0.03,
+    "patch_size": 4,
+    "epochs": 3,
+    "clean_accuracy": 30.5,
+    "clean_ASR": 0.56,
+    "victim_ASR": 15.17,
+    "backdoor_effect_pp": 14.61
+  },
+  {
+    "configuration": "strong_1",
+    "poison_rate": 0.05,
+    "patch_size": 6,
+    "epochs": 5,
+    "clean_accuracy": 37.0,
+    "clean_ASR": 0.0,
+    "victim_ASR": 100.0,
+    "backdoor_effect_pp": 100.0
+  },
+  {
+    "configuration": "strong_2",
+    "poison_rate": 0.07,
+    "patch_size": 6,
+    "epochs": 5,
+    "clean_accuracy": 39.0,
+    "clean_ASR": 0.0,
+    "victim_ASR": 29.78,
+    "backdoor_effect_pp": 29.78
+  },
+  {
+    "configuration": "strong_3",
+    "poison_rate": 0.05,
+    "patch_size": 8,
+    "epochs": 5,
+    "clean_accuracy": 37.5,
+    "clean_ASR": 0.0,
+    "victim_ASR": 100.0,
+    "backdoor_effect_pp": 100.0
+  }
+]

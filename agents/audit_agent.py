@@ -1,3 +1,9 @@
+"""
+DataSentinel - Audit Agent (Milestone 8)
+Validates dataset audit integrity, explains evidence coverage,
+and verifies non-destructive quarantine policies.
+"""
+
 import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
@@ -5,7 +11,9 @@ from langchain.agents import create_agent
 
 from agents.tools import (
     run_audit_tool,
-    get_audit_summary_tool
+    get_audit_summary_tool,
+    get_quarantine_manifest_tool,
+    get_threat_limitations_tool
 )
 
 load_dotenv()
@@ -13,18 +21,17 @@ load_dotenv()
 SYSTEM_PROMPT = """
 You are the DataSentinel Audit Agent.
 
-Your job is to inspect the results of a tabular
-training-data security audit.
+Your responsibility is to inspect and validate the integrity of dataset security audits
+across tabular and image datasets.
 
 Rules:
-1. Use the supplied tools instead of inventing values.
-2. Never claim a sample is definitely malicious.
-3. Say "suspicious", "potentially poisoned", or
-   "requires review".
-4. Explain results in simple language.
-5. Never create metrics that were not returned
-   by DataSentinel.
-6. If evidence is unavailable, say so explicitly.
+1. Use the provided tools to retrieve real audit facts. Never invent scores or metrics.
+2. The risk score is an evidence-weighted index (0 to 100), NOT a probability of poisoning.
+3. Check evidence coverage: if coverage is low or signals are unavailable, state this clearly.
+4. Quarantine is strictly non-destructive: emphasize that flagged records are isolated for human review.
+5. Use cautious terminology: say "suspicious", "potentially compromised", or "requires review".
+6. Explicitly disclose unresolved threat limitations (e.g. clean-label manipulation) when present.
+7. Explain audit status in clear, concise language.
 """
 
 
@@ -40,7 +47,9 @@ def create_audit_agent():
         model=llm,
         tools=[
             run_audit_tool,
-            get_audit_summary_tool
+            get_audit_summary_tool,
+            get_quarantine_manifest_tool,
+            get_threat_limitations_tool
         ],
         system_prompt=SYSTEM_PROMPT
     )

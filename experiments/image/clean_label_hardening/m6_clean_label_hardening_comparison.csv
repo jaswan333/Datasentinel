@@ -1,0 +1,4 @@
+version,population_test_n,population_quarantine_n,population_clean_eval_n,roc_auc,pr_auc,precision,recall,fpr,screened_clean_accuracy,clean_accuracy_delta_pp,quarantine_count,quarantine_rate,threshold
+baseline_m6_unconstrained,240,1200,300,0.5190,0.0574,5.14,91.67,89.04,11.33,-23.67,1081,0.9008,0.2000
+m6_1_pixel_prototype,240,1200,300,0.6696,0.0839,0.00,0.00,1.75,35.33,-1.67,19,0.0158,0.7223
+m6_2_latent_prototype,240,1200,300,0.6239,0.0711,0.00,0.00,0.44,38.00,2.00,1,0.0008,0.7287

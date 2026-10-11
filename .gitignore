@@ -17,6 +17,11 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+frontend/dist/
+node_modules/
+*/node_modules/
+frontend/node_modules/
+*.bak
 downloads/
 eggs/
 .eggs/
@@ -77,10 +82,17 @@ models/*.pkl
 models/*.joblib
 !models/.gitkeep
 
-# --- Large Raw Datasets & Spreadsheets ---
+# --- Large Raw Datasets, Archives & Spreadsheets ---
 *.xls
 *.xlsx
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.gz
 data/raw/
+data/image/raw/
+data/image/raw/*
 default of credit card clients.xls
 clean_credit_data.csv
 

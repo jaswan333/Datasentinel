@@ -1,0 +1,17 @@
+{
+  "clean_reference_model": {
+    "clean_test_acc": 0.35333333333333333,
+    "attack_success_rate": 0.25650557620817843
+  },
+  "standard_victim_model": {
+    "clean_test_acc": 0.3566666666666667,
+    "attack_success_rate": 0.08550185873605948
+  },
+  "mixup_defended_model": {
+    "clean_test_acc": 0.3333333333333333,
+    "attack_success_rate": 0.10780669144981413,
+    "mixup_alpha": 0.2,
+    "training_epochs": 5
+  },
+  "scientific_conclusion": "Mixup defensive training achieves 33.33% clean test accuracy and 10.78% ASR (compared to 8.55% victim ASR). Mixup serves as an empirical training-time mitigation, smoothing label manifolds, but is not an automatic certified defense."
+}

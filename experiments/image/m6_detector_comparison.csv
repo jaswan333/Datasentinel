@@ -1,0 +1,5 @@
+detector,signal,type
+Embedding Anomaly,KNN distance in learned representation,Unsupervised representation distance
+Activation Clustering,Small/unusual representation cluster,Latent space density clustering
+Spectral Signature,Unusual projection in representation space,Singular value decomposition direction
+DataSentinel Fusion,Calibrated multi-signal poison risk,Supervised logistic evidence meta-model

@@ -1,0 +1,7 @@
+attack,poison_count,poison_rate_pct,clean_ref_acc,victim_acc,screened_acc,victim_macro_f1,screened_macro_f1,detector_threshold,test_precision,test_recall,test_f1,test_roc_auc,test_pr_auc,test_fpr,quarantined_count,quarantine_recall_pct,quarantine_precision_pct,clean_asr,victim_asr,screened_asr,asr_reduction_pp,dataset_trust_score,dataset_risk_level
+random_label_flip,60,5.0,39.67,32.33,36.0,0.3096,0.3379,0.88,30.43,58.33,0.4,0.8374,0.3277,7.02,57,30.0,31.58,,,,,58.7,HIGH_RISK
+targeted_label_poison,36,3.0,39.67,31.33,31.33,0.2909,0.2818,0.9,8.47,71.43,0.1515,0.7639,0.386,23.18,115,30.56,9.57,,,,,59.72,HIGH_RISK
+feature_perturbation,60,5.0,39.67,34.33,30.0,0.3158,0.2749,0.78,54.55,50.0,0.5217,0.9401,0.4373,2.19,92,53.33,34.78,,,,,80.39,LOW_RISK
+duplicate_injection,60,4.76,39.67,35.33,33.33,0.3175,0.323,0.6,84.62,91.67,0.88,0.9988,0.9792,0.83,74,93.33,75.68,,,,,91.43,LOW_RISK
+clean_label_manipulation,60,5.0,39.67,35.0,11.33,0.3487,0.0342,0.2,5.14,91.67,0.0973,0.519,0.0574,89.04,1081,98.33,5.46,,,,,63.87,MODERATE_RISK
+backdoor_patch,75,5.0,36.33,39.67,28.67,0.3715,0.2587,0.86,68.42,86.67,0.7647,0.986,0.707,2.11,89,92.0,77.53,22.55,99.64,6.18,93.45,89.69,LOW_RISK

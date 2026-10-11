@@ -1,0 +1,111 @@
+{
+  "summary_source": "D:\\Datasentinel\\experiments\\image\\m6_strong_benchmark_summary.csv",
+  "guardrails_are_project_diagnostics_not_universal_standards": true,
+  "results": [
+    {
+      "attack": "random_label_flip",
+      "test_roc_auc": 0.8374,
+      "test_pr_auc": 0.3277,
+      "test_precision": 30.43,
+      "test_recall": 58.33,
+      "test_fpr": 7.02,
+      "victim_clean_accuracy": 32.33,
+      "screened_clean_accuracy": 36.0,
+      "clean_accuracy_delta_pp": 3.6700000000000017,
+      "victim_asr": null,
+      "screened_asr": null,
+      "asr_reduction_pp": null,
+      "warnings": [
+        "No configured warning fired; this is not proof of production readiness."
+      ]
+    },
+    {
+      "attack": "targeted_label_poison",
+      "test_roc_auc": 0.7639,
+      "test_pr_auc": 0.386,
+      "test_precision": 8.47,
+      "test_recall": 71.43,
+      "test_fpr": 23.18,
+      "victim_clean_accuracy": 31.33,
+      "screened_clean_accuracy": 31.33,
+      "clean_accuracy_delta_pp": 0.0,
+      "victim_asr": null,
+      "screened_asr": null,
+      "asr_reduction_pp": null,
+      "warnings": [
+        "Test FPR > 10%: inspect signal distributions and calibration."
+      ]
+    },
+    {
+      "attack": "feature_perturbation",
+      "test_roc_auc": 0.9401,
+      "test_pr_auc": 0.4373,
+      "test_precision": 54.55,
+      "test_recall": 50.0,
+      "test_fpr": 2.19,
+      "victim_clean_accuracy": 34.33,
+      "screened_clean_accuracy": 30.0,
+      "clean_accuracy_delta_pp": -4.329999999999998,
+      "victim_asr": null,
+      "screened_asr": null,
+      "asr_reduction_pp": null,
+      "warnings": [
+        "No configured warning fired; this is not proof of production readiness."
+      ]
+    },
+    {
+      "attack": "duplicate_injection",
+      "test_roc_auc": 0.9988,
+      "test_pr_auc": 0.9792,
+      "test_precision": 84.62,
+      "test_recall": 91.67,
+      "test_fpr": 0.83,
+      "victim_clean_accuracy": 35.33,
+      "screened_clean_accuracy": 33.33,
+      "clean_accuracy_delta_pp": -2.0,
+      "victim_asr": null,
+      "screened_asr": null,
+      "asr_reduction_pp": null,
+      "warnings": [
+        "No configured warning fired; this is not proof of production readiness."
+      ]
+    },
+    {
+      "attack": "clean_label_manipulation",
+      "test_roc_auc": 0.519,
+      "test_pr_auc": 0.0574,
+      "test_precision": 5.14,
+      "test_recall": 91.67,
+      "test_fpr": 89.04,
+      "victim_clean_accuracy": 35.0,
+      "screened_clean_accuracy": 11.33,
+      "clean_accuracy_delta_pp": -23.67,
+      "victim_asr": null,
+      "screened_asr": null,
+      "asr_reduction_pp": null,
+      "warnings": [
+        "ROC-AUC < 0.60: weak ranking; threshold changes alone cannot fix this.",
+        "PR-AUC < 0.10: compare with actual poison prevalence.",
+        "Test FPR > 10%: inspect signal distributions and calibration.",
+        "Screened clean accuracy dropped by >5 percentage points."
+      ]
+    },
+    {
+      "attack": "backdoor_patch",
+      "test_roc_auc": 0.986,
+      "test_pr_auc": 0.707,
+      "test_precision": 68.42,
+      "test_recall": 86.67,
+      "test_fpr": 2.11,
+      "victim_clean_accuracy": 39.67,
+      "screened_clean_accuracy": 28.67,
+      "clean_accuracy_delta_pp": -11.0,
+      "victim_asr": 99.64,
+      "screened_asr": 6.18,
+      "asr_reduction_pp": 93.45,
+      "warnings": [
+        "Screened clean accuracy dropped by >5 percentage points."
+      ]
+    }
+  ]
+}

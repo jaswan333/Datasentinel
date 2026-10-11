@@ -1,0 +1,5 @@
+configuration,poison_rate,patch_size,epochs,clean_accuracy,clean_ASR,victim_ASR,backdoor_effect_pp
+baseline,0.03,4,3,30.5,0.56,15.17,14.61
+strong_1,0.05,6,5,37.0,0.0,100.0,100.0
+strong_2,0.07,6,5,39.0,0.0,29.78,29.78
+strong_3,0.05,8,5,37.5,0.0,100.0,100.0

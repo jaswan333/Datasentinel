@@ -1,0 +1,3 @@
+target_attack,source_mixture,calibrated_threshold,zero_shot_roc_auc,zero_shot_pr_auc,zero_shot_recall_pct,zero_shot_precision_pct,zero_shot_f1,zero_shot_fpr_pct,quarantine_recall_pct,quarantine_precision_pct
+targeted_label_poison,random_label_flip+feature_perturbation+duplicate_injection+backdoor_patch,0.9,0.6677,0.0507,0.0,0.0,0.0,5.58,2.78,3.33
+clean_label_manipulation,random_label_flip+feature_perturbation+duplicate_injection+backdoor_patch,0.9,0.2573,0.0343,0.0,0.0,0.0,5.26,1.67,4.35

@@ -1,0 +1,28 @@
+[
+  {
+    "target_attack": "targeted_label_poison",
+    "source_mixture": "random_label_flip+feature_perturbation+duplicate_injection+backdoor_patch",
+    "calibrated_threshold": 0.9,
+    "zero_shot_roc_auc": 0.6677,
+    "zero_shot_pr_auc": 0.0507,
+    "zero_shot_recall_pct": 0.0,
+    "zero_shot_precision_pct": 0.0,
+    "zero_shot_f1": 0.0,
+    "zero_shot_fpr_pct": 5.58,
+    "quarantine_recall_pct": 2.78,
+    "quarantine_precision_pct": 3.33
+  },
+  {
+    "target_attack": "clean_label_manipulation",
+    "source_mixture": "random_label_flip+feature_perturbation+duplicate_injection+backdoor_patch",
+    "calibrated_threshold": 0.9,
+    "zero_shot_roc_auc": 0.2573,
+    "zero_shot_pr_auc": 0.0343,
+    "zero_shot_recall_pct": 0.0,
+    "zero_shot_precision_pct": 0.0,
+    "zero_shot_f1": 0.0,
+    "zero_shot_fpr_pct": 5.26,
+    "quarantine_recall_pct": 1.67,
+    "quarantine_precision_pct": 4.35
+  }
+]
